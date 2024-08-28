@@ -20,30 +20,32 @@
 
 <body>
 
-
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h2 class="card-title">What's in your Mind</h2>
-                        <input type="text" placeholder=" post Title here">
-                        <textarea  class="card-text" id="textarea">Discription</textarea>
-                        <div><a href="#" class="btn btn-primary">send</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+
         <h1 class="display-6 fw-bold">What's in your mind</h1>
         <div class="col-lg-6 mx-auto" id="outerDiv">
-            <input type="text" placeholder="post title" class="title">
-            <p class="lead mb-4"><textarea id ="textarea">discription</textarea></p>
+            <input type="text" placeholder="Post Title" class="title" id="name">
+            <div class="lead mb-4 m-5 w-auto" id="discription-div">
+                <textarea id="textarea" placeholder="Discription..."></textarea>
+            </div>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                <button type="button" class="btn btn1 btn-lg px-4 gap-3" onclick="titleName()">Send</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Discard</button>
+                <button type="button" class="btn btn-primary btn-lg px-4">Edit</button>
+            </div>
+        </div>
+    </div>
+    <div class="px-4 py-5 my-5 text-center">
+
+        <h1 class="display-6 fw-bold">See what you recieved</h1>
+        <div class="col-lg-6 mx-auto" id="outerDiv">
+            
+            <div class="lead mb-4 m-5 w-auto" id="discription-div">
+                <textarea id="textarea"></textarea>
+            </div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn1 btn-lg px-4 gap-3" onclick="titleName()">Send</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Discard</button>
             </div>
         </div>
     </div>
