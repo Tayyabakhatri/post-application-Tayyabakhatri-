@@ -10,9 +10,9 @@ function titleName() {
         alert("Title and discription are required field")
     } else {
         var receivedTitle= document.getElementById("receivedTitle")
-        receivedTitle.innerHTML=name
+        receivedTitle.value=name
         var received = document.getElementById("receivedText")
-        received.innerHTML = input
+        received.value = input
 
         title.value = ""
         discription.value = ""
@@ -21,8 +21,35 @@ function titleName() {
 }
 function discard() {
     var received = document.getElementById("receivedText")
-    received.innerHTML = ""
+    received.value = ""
     var receivedTitle= document.getElementById("receivedTitle")
-    receivedTitle.innerHTML=""
+    receivedTitle.value=""
 }
 
+function startTimer() {
+    // Function to format numbers to two digits
+    function formatNumber(number) {
+        return number < 10 ? '0' + number : number;
+    }
+
+    // Update the time every second
+    setInterval(() => {
+        const now = new Date();
+        const hours = formatNumber(now.getHours()%12);
+        const minutes = formatNumber(now.getMinutes());
+        const seconds = formatNumber(now.getSeconds());
+
+        document.getElementById('hours').textContent = hours;
+        document.getElementById('minutes').textContent = minutes;
+
+        // Update seconds and toggle blink class for blink effect
+        const secondsElement = document.getElementById('seconds');
+        secondsElement.textContent = seconds;
+
+        // Toggle the blink effect class
+        secondsElement.classList.toggle('blink');
+    }, 1000);
+}
+
+// Start the timer
+startTimer();
