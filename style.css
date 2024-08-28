@@ -1,42 +1,55 @@
-body{
+body {
     background-color: rgba(189, 186, 186, 0.178);
 }
-/* 
-.title{
-   
+
+.title {
+
     text-align: left;
-   border-radius: 5px;
-   width: 50%;
-   height: 50px;
-   margin-top: 30px;
-  
- 
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 30px;
+    font-size: 15px;
+
+
+
 }
 
-h1{
+h1 {
     color: #00acd5;
 }
-#textarea{
+
+#textarea {
     width: 100%;
     border: 1px solid black;
-   border-radius: 5px;
-   
+    border-radius: 5px;
+    height: 300px;
+    font-size: 15px;
+
 }
+
+#receivedText {
+    width: 50%;
+    height: 300px;
+    font-size: 15px;
+}
+
 .btn1 {
     background-color: #f1c40f;
-   
+
 }
-.btn1:hover{
+
+.btn1:hover {
     border: 2px solid #f1c40f;
     color: #f1c40f;
-} */
-.outerdiv{
+}
+
+/* .outerdiv{
     width:600px;
     height:auto;
     background-color:#ffffff;
     border-radius: 25px;
-}
-i{
+} */
+/* i{
     margin-top: 15px;
 }
 .line{
@@ -44,4 +57,4 @@ i{
     height: 20px;
     background-color: antiquewhite;
     
-}
+} */

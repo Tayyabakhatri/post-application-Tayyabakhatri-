@@ -22,27 +22,45 @@
 </head>
 
 <body>
-    <!-- 
+
     <div class="px-4 py-5 my-5 text-center">
 
-        <h1 class="display-6 fw-bold">What's in your mind</h1>
-        <div class="col-lg-6 mx-auto" id="outerDiv">
-            <input type="text" placeholder="Post Title" class="title" id="name">
-            <div class="lead mb-4 m-5 w-auto" id="discription-div">
-                <textarea id="textarea" placeholder="Discription..."></textarea>
-            </div>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn1 btn-lg px-4 gap-3" onclick="titleName()">Send</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Discard</button>
-                <button type="button" class="btn btn-primary btn-lg px-4">Edit</button>
+        <h1 class="display-5 fw-bold">What's in your mind</h1>
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-6 mx-auto" id="outerDiv">
+                <input type="text" placeholder="Post Title" class="title fw-bold fs-5 w-auto  rounded-5 px-4" id="name">
+                <div class=" mb-4 mt-3 w-auto fw-bold fs-5" id="discription-div">
+                    <textarea id="textarea" placeholder="Discription..." class=" rounded-5 px-4 "></textarea>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn1 btn-lg px-4 gap-3" onclick="titleName()">Send</button>
+
+                    <button type="button" class="btn btn-primary btn-lg px-4">Edit</button>
+                </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <div class="px-4 py-1 my-1 text-center w-100">
+
+        <div class=" mb-4 fw-bold fs-5" id="discription-div ">
+            <div><textarea name="" id="receivedTitle" placeholder="Title" class="w-50 rounded-5 px-4"></textarea></div>
+            <div> <textarea id="receivedText" placeholder="text will receive here"
+                    class="border border-1 border-dark rounded-5 px-4 "></textarea></div>
+
+            </textarea>
+            <div>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="discard()">Discard</button>
+            </div>
+        </div>
+
+    </div>
+   
 
     <!-- <div class="container">
         <div class="row">
             <div class="col"> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand " href="#"><img src="images/IMG_20230505_181211.jpg" alt=""
                     class="rounded-circle w-75 h-100"></a>
@@ -51,8 +69,8 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                           </li>
@@ -74,20 +92,20 @@
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                           </li>
                         </ul> -->
-                <form class="d-flex">
+    <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <i class="fa-brands fa-facebook-messenger fa-2xl" style="color: #0c0d0d;"></i>
-                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
-                </form>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
 
-            </div>
+    <!-- </div>
         </div>
     </nav>
-    <div  class="container">
+    <div class="container">
         <div>
             <a class="navbar-brand " href="#"><img src="images/IMG_20230505_181211.jpg" alt=""
                     class="rounded-circle w-75 h-100"></a>
-                    
+
         </div>
         <div>
             <p class="fs-5 fw-bold m-1">Tayyaba</p>
@@ -95,10 +113,11 @@
         </div>
         <div>
             <p>what you wnat to talk about</p>
-           </div>
-       
-    </div>
-    
+            
+        </div>
+
+    </div> -->
+
 
     <!-- </div>
         </div>
