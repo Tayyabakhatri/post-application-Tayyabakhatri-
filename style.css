@@ -1,14 +1,17 @@
 body {
-    background-color: rgba(189, 186, 186, 0.178);
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,0.17690826330532217) 100%);
 }
 
 .title {
 
     text-align: left;
-    border-radius: 5px;
+   border: none;
     height: 40px;
     margin-top: 30px;
     font-size: 15px;
+    
+    
 
 
 
@@ -20,10 +23,12 @@ h1 {
 
 #textarea {
     width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: none;
+    /* border: 1px solid black;
+    border-radius: 5px; */
     height: 300px;
     font-size: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
 
@@ -31,6 +36,12 @@ h1 {
     width: 50%;
     height: 300px;
     font-size: 15px;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#receivedTitle{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: none;
 }
 
 .btn1 {
@@ -49,4 +60,8 @@ h1 {
     display: flex;
     justify-content: right;
     align-items: center;
+}
+.btn{
+    background: rgb(33,9,121);
+background: linear-gradient(90deg, rgba(33,9,121,0.4738270308123249) 1%, rgba(0,212,255,1) 60%);
 }
