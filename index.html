@@ -22,15 +22,11 @@
 </head>
 
 <body>
-
-
     <div class="px-4 py-5 my-5 text-center" id="div1">
-
-        <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">What's in your mind</h1>
-            <div class=" col-sm-12 col-lg-6 "id="outerDiv">
-
-                <input type="text" placeholder="Post Title" class="title fw-bold fs-5 w-auto  rounded-5 px-4" id="name">
+        <h1 class="display-5 fw-bold">What's in your mind</h1>
+        <div class="d-flex justify-content-center">
+            <div class=" col-sm-12 col-md-6 " id="outerDiv">
+                <input type="text" placeholder="Post Title" class="title fw-bold fs-5  rounded-5 px-4" id="name">
                 <div class=" mb-4 mt-3 w-auto fw-bold fs-5" id="discription-div">
                     <div class="timer">
                         <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
@@ -38,32 +34,44 @@
                     <textarea id="textarea" placeholder="Discription..." class=" rounded-5 px-4 "></textarea>
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn1 btn-lg px-4 gap-3" onclick="titleName()">Send</button>
-
-                    <button type="button" class="btn btn-primary btn-lg px-4">Edit</button>
+                    <button type="button" class="btn btn1 btn-lg px-4 gap-3 text-white" onclick="titleName()">Send</button>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                         change background
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="images/image copy 2.png">background 1</a></li>
+                          <li><a class="dropdown-item" href="images/image copy 3.png">background 2</a></li>
+                          <li><a class="dropdown-item" href="images/image copy.png">background 3</a></li>
+                          <li><a class="dropdown-item" href="images/image.png">background 4</a></li>
+                        </ul>
+                      </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="px-4 py-5 my-5 text-center d-none" id="div2">
-
-        <div class=" mb-4 fw-bold fs-5" id="discription-div ">
-            <div class=" col-sm-12 col-lg-6 "><textarea id="receivedTitle" placeholder="Title"
-                    class="w-50 rounded-5 px-4"></textarea>
-            </div>
-            <div> <textarea id="receivedText" placeholder="text will receive here"
-                    class="border rounded-5 px-4 "></textarea></div>
-
-            </textarea>
-            <div>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="discard()">Discard</button>
+    <div class="px-4 py-5 my-5 text-center" id="div2">
+        <h1 class="display-5 fw-bold">Received Post</h1>
+        <div class="d-flex justify-content-center">
+            <div class=" col-sm-12 col-md-6 ">
+                <input type="text" placeholder="Title" class="title fw-bold fs-5  rounded-5 px-4" id="receivedTitle">
+                <div class=" mb-4 mt-3 w-auto fw-bold fs-5">
+                    <div class="timer">
+                        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                    </div>
+                    <textarea id="receivedText" placeholder="text will receive here"
+                        class=" rounded-5 px-4 "></textarea>
+                </div>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4 text-white"
+                        onclick="discard()">Discard</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 text-white" id="edit" onclick=" editNote()">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 text-white" onclick="goBack()">Go Back</button>
+                </div>
             </div>
         </div>
-
     </div>
-
-
     <script src="app.js"></script>
 </body>
 
