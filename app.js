@@ -7,7 +7,7 @@ function titleName() {
     var discription = document.getElementById("textarea");
     var input = discription.value
     if (name == "" || input == "") {
-        alert("Title and discription are required field")
+        Swal.fire("Title and description are mandatry");
     } else {
         var receivedTitle = document.getElementById("receivedTitle")
         receivedTitle.value = name
@@ -22,6 +22,32 @@ function titleName() {
         div1.style.display = "none"
     }
 }
+function backgroundChange(hrefOrGradient) {
+    var bg = document.getElementById("receivedText");
+    var title = document.getElementById("receivedTitle");
+
+    // Check if the input is a URL (image) or a gradient
+    if (hrefOrGradient.startsWith('images/')) {
+        // Apply image background
+        bg.style.backgroundImage = `url('${hrefOrGradient}')`;
+        title.style.backgroundImage = `url('${hrefOrGradient}')`;
+    } else {
+        // Apply gradient background
+        bg.style.backgroundImage = hrefOrGradient;
+        title.style.backgroundImage = hrefOrGradient;
+    }
+
+    // Apply background styles to both elements
+    bg.style.backgroundSize = 'cover';
+    bg.style.backgroundPosition = 'center';
+    title.style.backgroundSize = 'cover';
+    title.style.backgroundPosition = 'center';
+
+    return false;  // Prevent default anchor behavior
+}
+
+
+
    // Function to edit the note
    function editNote() {
     // Prompt the user for new title and text
@@ -31,6 +57,20 @@ function titleName() {
     // Update the text areas with new values if provided
     if (editTitle !== null) {
         document.getElementById('receivedTitle').value = editTitle;
+        Swal.fire({
+            title: "Do you want to save the changes?",
+            showDenyButton: true,
+            showCancelButton: true,
+            confirmButtonText: "Save",
+            denyButtonText: `Don't save`
+          }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+              Swal.fire("Saved!", "", "success");
+            } else if (result.isDenied) {
+              Swal.fire("Changes are not saved", "", "info");
+            }
+          });
     }
     if (editText !== null) {
         document.getElementById('receivedText').value = editText;
@@ -76,6 +116,7 @@ function startTimer() {
 
 // Start the timer
 startTimer();
+
 
 // var selectedBackground = ""; 
 
