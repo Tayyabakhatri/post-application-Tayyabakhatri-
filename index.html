@@ -34,24 +34,32 @@
                     <textarea id="textarea" placeholder="Discription..." class=" rounded-5 px-4 "></textarea>
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn1 btn-lg px-4 gap-3 text-white" onclick="titleName()">Send</button>
+                    <button type="button" class="btn btn1 btn-lg px-4 gap-3 text-white"
+                        onclick="titleName()">Send</button>
                     <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
-                         change background
+                        <a class="btn btn-secondary dropdown-toggle text-white" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            change background
                         </a>
-                      
+
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <!-- Image Background Options -->
-                            <li><a href="images/image copy.png" onclick="backgroundChange(this.href); return false;">Background 1 (Image)</a></li>
-                            <li><a href="images/image copy 3.png" onclick="backgroundChange(this.href); return false;">Background 2 (Image)</a></li>
-                        
+                            <li><a href="#"
+                                    onclick="backgroundChange('linear-gradient(to right, #22c1c3, #feb47b)'); return false;">Background 1 (Image)</a></li>
+                            <li><a href="#"
+                                    onclick="backgroundChange('linear-gradient(to right, #3f5efb, #feb47b)'); return false;">Background 2 (Image)</a></li>
+
                             <!-- Gradient Background Options -->
-                            <li><a href="#" onclick="backgroundChange('linear-gradient(to right, #ff7e5f, #feb47b)'); return false;">Background 3 (Gradient)</a></li>
-                            <li><a href="#" onclick="backgroundChange('linear-gradient(to right, #6a11cb, #2575fc)'); return false;">Background 4 (Gradient)</a></li>
+                            <li><a href="#"
+                                    onclick="backgroundChange('linear-gradient(to right, #ff7e5f, #feb47b)'); return false;">Background
+                                    3 (Gradient)</a></li>
+                            <li><a href="#"
+                                    onclick="backgroundChange('linear-gradient(to right, #6a11cb, #2575fc)'); return false;">Background
+                                    4 (Gradient)</a></li>
                         </ul>
-                        
-                        
-                      </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,13 +74,15 @@
                         <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
                     </div>
                     <textarea id="receivedText" placeholder="text will receive here"
-                        class=" rounded-5 px-4 " ></textarea>
+                        class=" rounded-5 px-4 "></textarea>
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4 text-white"
                         onclick="discard()">Discard</button>
-                    <button type="button" class="btn btn-primary btn-lg px-4 text-white" id="edit" onclick=" editNote()">Edit</button>
-                    <button type="button" class="btn btn-primary btn-lg px-4 text-white" onclick="goBack()">Go Back</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 text-white" id="edit"
+                        onclick=" editNote()">Edit</button>
+                    <button type="button" class="btn btn-primary btn-lg px-4 text-white" onclick="goBack()">Go
+                        Back</button>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ function titleName() {
         var div2 = document.getElementById("div2")
         div2.style.display = "block"
         var div1 = document.getElementById("div1")
-        div1.style.display = "none"
+        div1.style.display = "block"
     }
 }
 function backgroundChange(hrefOrGradient) {
